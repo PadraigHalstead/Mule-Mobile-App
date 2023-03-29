@@ -1,178 +1,176 @@
 QR Access System
-============
-Version 1.0.0
+=======================================
 
-Author: Padraig Halstead
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+   :caption: 🚀 Tutorials
 
-Table of Contents
-=================
-* Setup
-    * Mobile App
-    * Install
-    * Changing Expo Link
-    * Troubleshooting
-    * Validation
-    * Install
-    * Admin Panel
-    * Install
-* Using Admin Panel
-    * Login
-    * Adding Administrators
-    * Removing Administrators
-    * Revoking Access from Students
-* Using Validate Application
-    * Login/Signup
-    * Demonstrators
-    * Students
-    * Changing Expo URL
-* Using Mobile App
-    * Login
-    * Scanning QR Codes
-    * Validating Students
-    * Denying Validation
+   /tutorial/index
+   /intro/getting-started-with-sphinx
+   /intro/getting-started-with-mkdocs
+   /intro/import-guide
+   /examples
 
-## Setup
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+   :caption: 💡 Explanation
 
-### Mobile App
-To access the code, clone the github repository with the following command:
+   /choosing-a-site
+   /integrations
+   /downloadable-documentation
+   /environment-variables
+   /subprojects
+   /localization
 
-.. code-block:: console
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+   :caption: 🪄 How-to guides
 
-   $ git clone "https://github.com/PadraigHalstead/Mule-Mobile-App.git"
-   $ cd mule-mobile
+   Project setup and configuration </guides/setup/index>
+   Build process </guides/build/index>
+   Upgrading and maintaining projects </guides/maintenance/index>
+   Content, themes and SEO </guides/content/index>
+   Security and access </guides/access/index>
+   Account management </guides/management/index>
+   Best practice </guides/best-practice/index>
+   Troubleshooting problems </guides/troubleshooting/index>
 
-To install dependencies for your the mobile app, run the following command in your terminal:
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+   :caption: 📚 Reference
 
-.. code-block:: console
+   /reference/features
+   /config-file/index
+   /builds
+   /build-customization
+   /server-side-search/syntax
+   /faq
+   /api/index
+   /changelog
+   /about/index
+   Developer Documentation <https://dev.readthedocs.io>
 
-   $ npm install
-   
-You may also need to install Expo as a global package:
+.. meta::
+   :description lang=en: Automate building, versioning, and hosting of your technical documentation continuously on Read the Docs.
 
-.. code-block:: console
+.. Adds a hidden link for the purpose of validating Read the Docs' Mastodon profile
+.. raw:: html
 
-   $ npm install -g expo-cli
-   
-After running both of these, run the following command in the root of the application:
+   <a style="display: none;" rel="me" href="https://fosstodon.org/@readthedocs">Mastodon</a>
 
-.. code-block:: console
+Read the Docs simplifies software documentation
+by building, versioning, and hosting of your docs, automatically.
+Treating documentation like code keeps your team in the same tools,
+and your documentation up to date.
 
-   $ expo start
+|:arrows_counterclockwise:| Up to date documentation
+    Whenever you push code to Git,
+    Read the Docs will automatically build your docs
+    so your code and documentation are always up-to-date.
+    Get started with our :doc:`tutorial </tutorial/index>`.
 
-If required to install any additional packages, accept and install them.
+|:card_index_dividers:| Documentation for every version
+    Read the Docs can host multiple versions of your docs.
+    Keep your 1.0 and 2.0 documentation online,
+    pulled directly from Git.
+    Start hosting all your :doc:`versions </versions>`.
 
-### Changing Expo Link
-If the link in the validation applicaton is not working, it is likely that the links are not the same as what is running on the local machine and will need to be modified. To do this, carry out the following:
+|:heartbeat:| Open source and user focused
+    Our company is bootstrapped and 100% user-focused,
+    so our product gets better for our users instead of our investors.
+    |org_brand| hosts documentation for over 100,000 large
+    and small open source projects.
+    |com_brand| supports hundreds of organizations with product and internal documentation.
+    Learn more about :doc:`our two platforms </choosing-a-site>`.
 
-1. Open the Validate Application in an IDE such as VSCODE.
-2. Navigate to `./src/components/AdminUserValidationPanel.js`
-3. Change this variable to match the link.
+First time here?
+----------------
 
-.. code-block:: javascript
+We have a few places for you to get started:
 
-   const expoURL = "exp://149.157.117.167:19000"
-   //Change the link here to whats in the terminal
+.. descriptions here are active
 
-### Troubleshooting
+🚀 :doc:`/tutorial/index`
+  Take the first practical steps with Read the Docs.
+
+🚀 :doc:`/examples`
+  Start your journey with an example project to hit the ground running.
+
+.. TODO: This next item needs its article to be finished in a separate PR
+.. https://github.com/readthedocs/readthedocs.org/pull/10071
+.. This page isn't ready for front page treatment
+.. doc:`Why use a dedicated documentation platform? </integrations>`
+.. An introduction to some of the most important reasons for using a *Documentation CI* and build *docs as code*.
+
+:doc:`🚀 All tutorials </tutorials/index>`
+  Using documentation tools like Sphinx or MkDocs for the first time or importing an existing project?
+  We have the tutorials to get you started!
+
+Explanation
+-----------
+
+Get a high-level overview of our platform:
+
+.. Descriptions here are focused on learning
+
+.. TODO: This next item needs its article to be finished in a separate PR
+.. https://github.com/readthedocs/readthedocs.org/pull/10071
+
+💡 :doc:`Continuous Documentation </integrations>`
+  Discover the advantages of having your documentation continuously deployed.
+
+💡 :doc:`/choosing-a-site`
+  Learn about the differences between |org_brand| and |com_brand|.
+
+.. TODO: This next item needs its article to be finished in a separate PR
+.. https://github.com/readthedocs/readthedocs.org/pull/10071
+.. TODO: 💡 Advanced topics: Deep-dive into Read the Docs
+..  Get familiar with some of the more advanced topics of building and deploying documentation with Read the Docs.
 
 
-### Validation
-...
+How-to guides
+-------------
 
-### Admin Panel
-...
+Need to get something specific done? These guides provide step-by-step instructions on various areas:
 
+.. Descriptions here are active, learn, setup, etc.
+.. The chosen sample of how-tos is intended reflect to width of the how-to section
+.. i.e. NOT only what is most popular or easiest for beginners.
 
+🪄 :doc:`/guides/pull-requests`
+  Setup pull request builds and enjoy previews of each commit.
 
-Admin Panel
-===========
-The admin panel is used to manage demonstrators, head demonstrators and lectuters within the system and revoke validation from students.
+🪄 :doc:`/analytics`
+  Learn more about how users are interacting with your documentation.
 
-Adding Administrators
-------------
-To add a new user to the system, follow these steps:
+🪄 :doc:`/guides/cross-referencing-with-sphinx`
+  Learn how to use cross-references in a Sphinx project.
 
-1. Log in to the admin panel
-2. Click on the "Add +" button
-3. Fill out the users email and select their role
-4. Click "Submit" to add the administrator
+🪄 :doc:`All how-to guides </guides/index>`
+  Browser the entire catalog for many more how-to guides.
 
-Removing Administrators
---------------
-To remove an administrator from the system, follow these steps:
+Reference
+---------
 
-1. Log in to the admin panel
-2. Find the user you want to remove in the administrator's list.
-3. Click on the "Remove -" button next to the adminstrator's name.
+Need to know how something works? Our references provide the details:
 
-.. warning::
+.. Descriptions here sound like reference
 
-  You must have the correct privledges to remove particular users in the system.
+📚 :doc:`/reference/features`
+  Overview of all the main features of Read the Docs.
 
-Revoking Access from Students
----------------
-To revoke a user's access to certain features, follow these steps:
+📚 :doc:`/config-file/index`
+  Information for our configuration file: ``.readthedocs.yaml``.
 
-1. Log in to the admin panel
-2. Find the user you want to modify in the user list
-3. Click on the "Edit" button next to the user's name
-4. Uncheck the boxes for the features you want to revoke access to
-5. Click "Save" to apply the changes
+📚 :doc:`/builds`
+  Overview of how documentation builds happen.
 
-Validate Application
-====================
-The validation application also students to be validated by demonstrators.
+📚 :doc:`/build-customization`
+  Information on how to add your own build logic or replace default build steps.
 
-Instructions for Demonstrator
------------------------------
-To use the application, follow these steps:
-
-1. Login to the application using your credentials.
-2. Scan the QR code that appears on screen.
-3. Open / download the Expo application on your mobile device.
-
-Instructions for Student
-------------------------
-For the validation process, follow these steps:
-
-1. Login to the application using your credentials
-2. Ask a demonstrator to scan your QR code.
-3. Press the "check" button verify your verification status.
-
-Mobile App
-==========
-The mobile app is used by demonstrators to validate students.
-
-Login
------
-To log in to the mobile app, follow these steps:
-
-1. Open the validation application as an adminstrator.
-2. Scan your QR code to open the Expo Application
-3. Enter your credentials on the login screen.
-4. Click the "Log In" button.
-
-Scanning QR Codes
------------------
-To scan a QR code in the mobile app, follow these steps:
-
-1. Once logged in, press the "Scan QR" button.
-2. Hold your phone up to the students QR code.
-3. Wait for the app to scan the code
-
-Validating Students
--------------------
-To validate a student's check-in using the mobile app, follow these steps:
-
-1. Once you have scanned the code, the students details will appear on screen.
-2. Click on the "Accept" button
-3. Student will be validated and can begin their work.
-
-Denying Validation
-------------------
-To deny a student's check-in using the mobile app, follow these steps:
-
-1. Once you have scanned the code, the students details will appear on screen.
-2. Click on the "Deny" button
-3. Student will not be validated and you will be re-directed to the home screen.
-
+📚 :doc:`/api/index`
+  Automate your documentation with our API and save yourself some work.
