@@ -21,10 +21,12 @@ Uses a number of open source projects to work properly:
 
 ## Installation + Setup
 
-Clone the repository
+Clone the repositories
 
 ```sh
 git clone "https://github.com/PadraigHalstead/Mule-Mobile-App.git"
+git clone "https://github.com/PadraigHalstead/validate-application.git"
+git clone "https://github.com/PadraigHalstead/admin-application.git"
 ```
 
 Install the dependencies and start the server.
